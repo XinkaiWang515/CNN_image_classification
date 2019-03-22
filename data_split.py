@@ -7,6 +7,8 @@ savepath = 'categorical_image'
 
 data_file = 'train.csv'
 data = np.genfromtxt(data_file, delimiter=',', dtype=str)
+# unique, counts = np.unique(data[:,1], return_counts=True)
+# print(dict(zip(unique, counts)))
 
 def mk_split_dir(type, imgs, idx_min, count):
     dir = os.path.join(savepath, type)
